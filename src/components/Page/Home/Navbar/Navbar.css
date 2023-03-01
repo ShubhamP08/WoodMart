@@ -1,0 +1,170 @@
+.Navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: white;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.ListMenu {
+  display: flex;
+}
+
+.Menu {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.Menu a {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  padding-bottom: 45px;
+}
+
+.Menu a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -48px;
+  left: 0;
+  background-color: #518581;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.Menu a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  /* border-bottom: 3px solid #518581; */
+}
+
+.Active {
+  border-bottom: 3px solid #518581;
+}
+
+.btnSignUp,
+.btnLogIn {
+  width: 90px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: 1px black;
+  border-width: 1px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.btnLogIn {
+  border: none;
+  color: white;
+  background-color: #518581;
+  margin-left: 15px;
+}
+
+.btnSignUp {
+  border: 1px solid #518581;
+}
+
+.btnSignUp a,
+.btnLogIn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btnSignUp a {
+  color: black;
+}
+
+.btnLogIn:hover {
+  background-color: #63a19c;
+}
+
+.btnSignUp:hover,
+.btnSignUp a:hover {
+  background-color: #518581;
+  color: white;
+}
+
+.ButtonUserLogin {
+  display: flex;
+  align-items: center;
+}
+
+.ButtonUserLogin a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .Navigation {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .ListMenu {
+    display: none;
+  }
+
+  .ButtonNav {
+    display: none;
+  }
+
+  .ButtonNav button {
+    margin-left: 0px;
+  }
+
+  .ButtonUserLogin {
+    display: none;
+  }
+
+  .loginNSignUpMobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnSignUp {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Navigation {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .ListMenu {
+    display: none;
+  }
+
+  .ButtonNav {
+    display: none;
+  }
+
+  .ButtonNav button {
+    margin-left: 0px;
+  }
+
+  .logomobile {
+    width: 110px;
+  }
+
+  .loginNSignUpMobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnSignUp {
+    margin-right: 20px;
+  }
+}

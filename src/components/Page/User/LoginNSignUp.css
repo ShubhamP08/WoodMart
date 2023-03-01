@@ -1,0 +1,198 @@
+.backgroundImage {
+  background-image: url(../../assets/BackgroundLogin.png);
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.containerAuthContex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.inputContex {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 610px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.logoContex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.logoContex h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 30px;
+  display: none;
+}
+
+.logoContex a {
+  margin-top: 0px;
+}
+
+.logoContex img {
+  width: 150px;
+  margin-top: 0px;
+}
+
+.inputContex form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.inputContex form h5 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.inputContex form p,
+.inputContex form a {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.inputContex input {
+  padding: 20px 20px;
+  margin: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.loginGoogle,
+.loginFacebook,
+.LoginBtn {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  border-color: none;
+  height: 60px;
+  cursor: pointer;
+}
+
+.loginGoogle h4,
+.loginFacebook h4 {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  margin-right: 40px;
+  font-weight: 500;
+}
+
+.LoginBtn {
+  background-color: #518581;
+}
+.loginFacebook {
+  background-color: #4267b2;
+}
+.loginGoogle {
+  background-color: #dd4b39;
+}
+
+.LoginBtn:hover {
+  background-color: #5b9691;
+}
+.loginFacebook:hover {
+  background-color: #476db9;
+}
+.loginGoogle:hover {
+  background-color: #ce4d3c;
+}
+
+.loginGoogle img {
+  width: 30px;
+  float: inline-start;
+  margin-left: 10px;
+}
+.loginFacebook img {
+  width: 30px;
+  float: inline-start;
+  margin-left: 10px;
+}
+
+.logoLalasia {
+  display: none;
+}
+
+.errMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .backgroundImage {
+    background-image: none;
+    background-position: center;
+  }
+
+  .inputContex {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .logoLalasia {
+    display: block;
+    position: absolute;
+    bottom: 90%;
+  }
+
+  .logoContex img {
+    display: none;
+  }
+
+  .logoContex h1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+  .inputContex form {
+    margin: auto;
+    width: 350px;
+  }
+
+  .loginGoogle h4,
+  .loginFacebook h4 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
+  .loginGoogle img {
+    width: 25px;
+  }
+  .loginFacebook img {
+    width: 25px;
+  }
+}

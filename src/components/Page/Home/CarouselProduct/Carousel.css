@@ -1,0 +1,92 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-top: 0px;
+}
+
+.titlecarousel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.desccarausel {
+  width: 656px;
+}
+
+.titlecarousel h5 {
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #ffb23f;
+  margin-bottom: 0px;
+}
+
+.titlecarousel h1 {
+  font-size: 44px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titlecarousel p {
+  font-size: 18px;
+  color: #afadb5;
+}
+
+.sliderProduct {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+@media screen and (min-width: 1920px) {
+  .sliderProduct {
+    width: 1500px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sliderProduct {
+    width: 1100px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .sliderProduct {
+    width: 700px;
+    height: 500px;
+  }
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+
+  .slick-list {
+    margin: 0 -15px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sliderProduct {
+    width: 300px;
+  }
+
+  .titlecarousel h5 {
+    font-size: 14px;
+  }
+
+  .titlecarousel h1 {
+    font-size: 24px;
+  }
+
+  .titlecarousel p {
+    font-size: 14px;
+  }
+
+  .desccarausel {
+    width: 300px;
+  }
+}

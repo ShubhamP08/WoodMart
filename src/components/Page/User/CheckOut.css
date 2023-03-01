@@ -1,0 +1,363 @@
+.checkOutContainer {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 100px;
+}
+
+.checkoutWrap {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-right: 20px;
+}
+
+.alamatUser {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.addressEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addressEmpty h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.addressEmpty p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #518581;
+  cursor: pointer;
+}
+
+.addressEmpty p:hover {
+  border-bottom: 2px solid #5a948f;
+}
+
+.addressEmpty img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.alamatUser a {
+  text-decoration: none;
+  color: #5a948f;
+  font-weight: bold;
+}
+
+.alamatUser a:hover {
+  border-bottom: 2px solid #5a948f;
+}
+
+.dataAlamat h4 {
+  margin-bottom: 0px;
+}
+
+.dataAlamat p {
+  width: 400px;
+  margin-top: 5px;
+}
+
+.alamatUser button {
+  box-sizing: border-box;
+  width: 200px;
+  height: 40px;
+  margin-right: 10px;
+
+  background-color: #518581;
+
+  font-size: 15px;
+
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.itemCheckout {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.checkoutItems {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.descItemCheckout {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.descItemCheckout h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.descItemCheckout p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.descItemCheckout h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.courierPengiriman {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.courierPengiriman label {
+  margin-bottom: 10px;
+}
+
+.courierPengiriman select {
+  box-sizing: border-box;
+  background-color: #518581;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.selectcourier {
+  display: flex;
+  flex-direction: column;
+}
+
+.ringkasanCheckout {
+  width: 500px;
+  height: 280px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.ringkasanCheckout h3 {
+  text-align: center;
+}
+
+.totalCheckout {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.totalCheckout h4 {
+  margin-bottom: 0px;
+}
+
+.totalBayarItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalBayarOngkir {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalTagihan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnCheckout {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btnBayar {
+  box-sizing: border-box;
+  width: 400px;
+  height: 50px;
+
+  background-color: #518581;
+
+  font-size: 18px;
+
+  color: white;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnBayar:hover {
+  background-color: #5a948f;
+}
+
+.btnDisableCheckout {
+  box-sizing: border-box;
+  width: 400px;
+  height: 50px;
+
+  background-color: rgb(153, 153, 153);
+
+  font-size: 18px;
+
+  color: white;
+  border: none;
+
+  cursor: not-allowed;
+}
+
+.metodePembayaran {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bank {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mandiri,
+.bca {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.bri {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  
+}
+
+.mandiri label,
+.bca label,
+.bri label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .checkOutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .checkoutWrap {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .ringkasanCheckout {
+    width: 680px;
+    height: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .checkOutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .checkoutWrap {
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .dataAlamat p {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .checkoutItems img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .descItemCheckout h3 {
+    font-size: 15px;
+  }
+
+  .descItemCheckout p {
+    font-size: 12px;
+  }
+
+  .descItemCheckout h4 {
+    font-size: 15px;
+  }
+
+  .courierPengiriman {
+    justify-content: center;
+  }
+
+  .courierPengiriman label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .courierPengiriman select {
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .mandiri img,
+  .bca img,
+  .bri img {
+    width: 70px;
+  }
+
+  .ringkasanCheckout {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .totalCheckout h4 {
+    font-size: 14px;
+  }
+
+  .btnBayar {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .btnDisableCheckout {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .addressEmpty h4 {
+    font-size: 13px;
+    text-align: center;
+  }
+}
